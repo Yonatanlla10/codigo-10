@@ -21,6 +21,22 @@ git status
 ```bash
 git status
 ```
+*agrega los archivos a la memoria de la pc
+```bash
+git add
+```
+* crear el registro de los cambios realizdos.
+```bash
+git commit -m "comentario"
+```
+* poder ver historial de comits
+
+[ ] Git log retorn un `ìd` con este id vamos a poder ver el detalle de los cambios que se hicieron en este caso 
+
+```bash
+git log
+```
+* para poder ver el detalle del commit usamos 
 
 
 
