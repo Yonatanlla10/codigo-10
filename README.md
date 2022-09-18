@@ -1,29 +1,29 @@
 # primer dia con Git/Github
-comando para configurar el usuario y correo 
+* comando para configurar el usuario y correo 
 ```bash
 git --version
 ```
-para configurar el correo
+* para configurar el correo
 ```bash
 git config --global user.email "email"
 ```
 ``` bash
 git config --global user.name "username"
 ```
-*me sirve para inicializar git.
+* me sirve para inicializar git.
 ```bash
 git init
 ```
-*para ver el estado de nuestros cambios
+* para ver el estado de nuestros cambios
 ```bash
 git status
 ```
 ```bash
 git status
 ```
-*agrega los archivos a la memoria de la pc
+* agrega los archivos a la memoria de la pc
 ```bash
-git add
+git add .
 ```
 * crear el registro de los cambios realizdos.
 ```bash
@@ -41,9 +41,13 @@ git log
 ```
 git show
 ```
-*cambiar de URL
+* cambiar de URL
 ```
 git remote set-url origin
+```
+* para pasar a la direccion de HITHUB
+```
+git push origin main
 ```
 
 
