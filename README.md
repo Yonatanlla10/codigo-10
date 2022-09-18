@@ -41,6 +41,10 @@ git log
 ```
 git show
 ```
+*cambiar de URL
+```
+git remote set-url origin
+```
 
 
 
