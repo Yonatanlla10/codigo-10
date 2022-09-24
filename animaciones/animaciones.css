@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(66, 71, 69);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-size: 70px;
+    color: #ffc107;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 55px;
+    -webkit-text-stroke-width: 2.7px;
+    -webkit-text-stroke-color: #B80000;
+    -webkit-text-fill-color: #8ADAFF;
+    letter-spacing: 18px;
+    font-family: Impact, Charcoal, sans-serif;
+    animation-duration: 6s;
+    animation-name: screen-server;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    }
+    /* animenos al p */
+/* tenemos que enlazar nuestro animacion 
+con nuestro keyframes y se da por el name*/
+
+@keyframes screen-server {
+    /* lo que esta dentro de nuestro keyframe */
+    /* se llama fotogramas */
+   /* inicio de la animacion */
+    from{
+        margin-left: 100%;
+
+    }
+    /* es la parte final de 
+    animacion */
+    to{
+        margin-right: 100%;
+    }
+    10%{
+        margin-top: 500px;
+    }
+    30%{
+        margin-top:-500px;
+    }
+    50%{
+        margin-top:500px;
+    }
+    70%{
+    
+            margin-top:-500px;
+
+    }
+    90%{
+        margin-top:500px;
+    }
+    100%{
+            margin-top:0px;
+    }
+}
+

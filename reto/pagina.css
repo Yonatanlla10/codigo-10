@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.header a {
+    align-self: baseline;
+    justify-self: end;
+}
+@media (min-width: 600px){
+    .grid-container{
+        margin: 40px;
+        border-radius: 20px;
+        padding: 30px;
+    }
+}
