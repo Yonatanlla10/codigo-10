@@ -4,62 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="diseño2.css">
+    <link rel="stylesheet" type="text/css" href="formulario.css">
     <title>Document</title>
 </head>
     <body>
         <!-- para poder crear un formulario necesitamos la etiqueta form -->
-        <form action="">
+        <form>
             <!-- lo que esta dentro son las partes del formulario-->
             <!-- el input mas utilizado es el input de tipo text -->
             <!-- INPUT TYPE: text -->
             <p>
-            <input type="text" placeholder="ingrese su nombre">
+            <label for="nombre">Nombre</label>
+            <input required
+            disabled
+            type="text"
+            name="nombre"
+            placeholder="ingrese su nombre">
+            </p>
+            <p>
+            <label for="dni">Dni</label>
+                <input 
+                required 
+                type="number" 
+                maxlength="8" 
+                placeholder="Ingrese su DNI"/>
             </p>
             <!-- tipe number -->
             <p>
-                <input 
-                required 
-                value="110" 
+            <label for="edad">Edad</label>
+                <input required 
                 name="edad" 
                 type="number" 
                 placeholder="Ingrese su edad">
             </p>
             <!-- tipe email -->
             <p>
-                <input 
-                required
-                value="yonatanllanto174@gmail.com"
+            <label for="correo">Correo</label>
+                <input required
                 name="correo"
                 type="email" 
                 placeholder="Ingrese su correo">
             </p>
             <!-- type password -->
             <p>
-                <input 
-                required
+            <label for="contraseña">Contraseña</label>
+                <input required 
+
                 type="password" 
                 placeholder="Ingrese su contraceña">
             </p>
             <!-- iput type: date -->
             <p>
-                <input type="date">
+                <label for="fecha" >Fecha</label>
+                <input class="fecha" value="24-09-2022" required type="date">
             </p>
             <!-- lista de opciones -->
             <p>
-            <select>
-                <option value="" disabled >selecciona un curso</option>
-                <option value=""">Curso de React</option>
-                <option value="">Curso de Css</option>
-                <option value="">Curso de Html</option>
-                <option value="">Curso de JavaScript</option>
-            </select>
+                <select class="select">
+                    <option value="" disabled >selecciona un curso</option>
+                    <option value=""">Curso de React</option>
+                    <option value="">Curso de Css</option>
+                    <option value="">Curso de Html</option>
+                    <option value="">Curso de JavaScript</option>
+                </select>
             </p>
             <!-- botones para enviar datos
             o informacion -->
-            <button tipe = "submit">
-                Enviar datos con boton
-            </button>
+            <button class="botton" tipe = "submit">Enviar datos con boton</button>
+            
         </form>
     </body>
 </html>

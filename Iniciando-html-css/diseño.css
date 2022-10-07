@@ -1,0 +1,122 @@
+/* ? cambios de esti.os por defecto*/
+:root {
+    font-size: 15px;
+}
+/* !VAMOS USAR LA FUIENTE QUE SE ACABA DE IMPORTAR */
+body{
+    font-family: "Inter Tight";
+    text-align: -webkit-center;
+    background-color: #000;
+}
+.ac-gn-item{
+    color: #ccc;
+    margin-right: 44px;
+    display: flex;
+    justify-content:space-between;
+    list-style: none;
+}
+h1{
+    color: #D4AF37;
+    text-align: center;
+    font-size: 80px;
+    margin: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 10rem;
+}
+.sub{
+    text-align: center;
+    color: #ccc;
+    font-size: 20px;
+    margin: 5px;
+    margin-bottom: 50px;
+    background-color: rgb(42, 42, 42);
+}
+.imagen{
+    width: 800px;
+}
+.product_cell {
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    color: blue;
+    width: 200px;
+}
+/* ?solo se actica cuando se pasa el maus por enciam */
+.product_cell:hover{
+    border: 3px red;
+    box-shadow: 0px 0px 10px white;
+    cursor: pointer;
+}
+.product_cell:hover > img{
+    opacity: 50%;
+    border: 4px solid rgb(19, 18, 18);
+}
+
+.product_cell img{
+    width: 200px;
+    text-align: center;
+}
+.iphone>h2{
+   color: red;
+}
+.iphone>h3{
+    color: brown;
+}
+.airpods>h2{
+    color: rgb(17, 207, 74);
+}
+.airpods>h3{
+    color: brown;
+}
+.mac>h2{
+    color: rgb(10, 188, 237);
+}
+.mac>h3{
+    color: brown;
+}
+.div_form{
+    width: 600px;
+    margin: 20px auto;
+}
+.div_form input{
+    height: 40px;
+    border-radius: 20px;
+    width: 70%;
+    font-size: 20px;
+    padding-left: 20px;
+    outline: none;
+}
+.div_form input:focus{
+    background-color: #666;
+    box-shadow: 0px 0px 5px white;
+    border: none;
+    color: #000;
+    cursor: pointer;
+}
+.div_form > form > button {
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 20%;
+}
+.div_form > form > button {
+    background-color: #666;
+    color: #ccc;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+.div_form > form > botton:focus{
+    border: 2px solid white;
+    
+}
+/* !PSEUDO-ELEMENTO */
+.price::before{
+    content: "$ ";
+    font-size: 20px;
+}
+.price::after{
+    content: ".00";
+}

@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(72, 72, 72);
+}
+form{
+    width: 300px;
+    background-color: #ccc;
+    padding: 16px;
+    border-radius: 16px;
+    margin: auto;
+}
+form label{
+    width: 72px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0.5px;
+    margin-right: 10px;
+}
+.fecha{
+    width: 170px;
+    text-align: center;
+}
+.select{
+    width: 256px;
+    text-align: center;
+    height: 20px;
+}
+.botton{
+    width: 256px;
+    height: 40px;
+    border-radius: 5px;
+    color: #ccc;
+    background-color: black;
+}
+
+
