@@ -1,24 +1,29 @@
 /* ? cambios de esti.os por defecto*/
 :root {
-    font-size: 15px;
+    font-size: 2px;
+    margin: 0px;
+    padding: 0px;
 }
 /* !VAMOS USAR LA FUIENTE QUE SE ACABA DE IMPORTAR */
 body{
     font-family: "Inter Tight";
-    text-align: -webkit-center;
     background-color: #000;
 }
 .ac-gn-item{
-    color: #ccc;
-    margin-right: 44px;
     display: flex;
-    justify-content:space-between;
+    font-size: 20px;
+    color: #ccc;
+    flex-direction: column;
     list-style: none;
 }
-h1{
+.formulario{
+    color: #fff;
+    text-decoration: none;
+}
+.container{
     color: #D4AF37;
     text-align: center;
-    font-size: 80px;
+    font-size: 5px;
     margin: 10px;
     margin-top: 10px;
     padding: 10px;
@@ -33,9 +38,10 @@ h1{
     background-color: rgb(42, 42, 42);
 }
 .imagen{
-    width: 800px;
+    width: 300px;
 }
 .product_cell {
+
     border: 2px solid blue;
     border-radius: 10px;
     padding: 10px;
@@ -50,6 +56,7 @@ h1{
     cursor: pointer;
 }
 .product_cell:hover > img{
+    display: flex;
     opacity: 50%;
     border: 4px solid rgb(19, 18, 18);
 }
@@ -119,4 +126,12 @@ h1{
 }
 .price::after{
     content: ".00";
+}
+button:hover{
+    cursor: pointer;
+}
+@media (min-width: 600px){
+    body{
+        background-color: #D4AF37;
+    }
 }

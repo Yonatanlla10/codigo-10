@@ -1,0 +1,43 @@
+*{
+    /* !hace que el borde abarca dentro de 
+    !la caja */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: red;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+}
+.padre{
+    font-size: 50px;
+    color: #000;
+    display: flex;
+    height: 100vh;
+/*  ? va respetar el ancho de la pantalla 
+    ? cuando un elemento ocupa mas de la pantella
+    ? lo mandara a la siguiente fila */
+    flex-wrap: wrap;
+    /* ! justify-content: permite alinear elementos de lado horizontal
+    ?flex-start = izquierda  */
+    /*? flex-center: medio*/
+    /* ?flex-end: derecha */
+    /* ?space-between: manda a los elemenos de extremo a extremo */
+    /* ?space-around: se parece a space-between pero
+    ?da unos masrgenes al inicio y al final  */
+    /* ?space-evenly: es lo mismo a space-around */
+
+    justify-content: flex-start;
+        /* !align-items */
+    /* es la propiedad de flex que permite alinear elementos
+    verticalmente y comparte todas las propiedades de justify-content */
+    align-items: space-evenly;
+}
+
+.hijo{
+    width: 25%;
+    height: 100px;
+    border: solid 1px green;
+    background-color: #ccc;
+}
